@@ -40,5 +40,5 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS
 - JavaScript
-- Mobile-first workflow
+- Mobile-first workflowth
 
