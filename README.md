@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/timavidon/Ping-single-column-coming-soon-page)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://timavidon.github.io/Ping-single-column-coming-soon-page/)
 
 ## My process
 
