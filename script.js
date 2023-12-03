@@ -1,7 +1,6 @@
 const form = document.querySelector("form");
 const submitBtn = document.querySelector(".button");
 const emailInput = document.querySelector("#email");
-const errorMessage = document.querySelector(".error-msg");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -9,10 +8,11 @@ form.addEventListener("submit", (e) => {
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  let email = emailInput.innerHTML;
+  let email = emailInput.value.trim();
   if (!validateEmail(email)) {
-    emailInput.classList.toggle("error");
-    errorMessage.classList.toggle("hidden");
+    emailInput.setAttribute("aria-invalid", "true");
+  } else {
+    emailInput.setAttribute("aria-invalid", "false");
   }
 });
 
