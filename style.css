@@ -15,7 +15,7 @@
   /* Font sizes */
   --fs-paragraph: 1.25rem;
   --fs-heading-mobile: 1.8rem;
-  --fs-heading-dekstop: 2.5rem;
+  --fs-heading-dekstop: 3rem;
 
   /* Font weights */
   --fw-light: 300;
@@ -69,7 +69,7 @@ main {
 }
 
 .logo {
-  margin-top: 8rem;
+  margin-top: 6rem;
   margin-bottom: 3rem;
   margin-inline: auto;
 }
@@ -78,7 +78,6 @@ main {
   font-size: var(--fs-heading-mobile);
   font-weight: var(--fw-light);
   color: hsl(var(--neutral-first-clr), 0.85);
-  margin-bottom: 1rem;
 }
 
 .heading span {
@@ -87,7 +86,7 @@ main {
 }
 
 .desc {
-  margin-bottom: 2.5rem;
+  margin: 0.5rem 0 3rem 0;
 }
 
 input {
@@ -110,11 +109,12 @@ input:focus {
   visibility: hidden;
   font-size: smaller;
   font-style: italic;
-  margin: 0.3rem 0 1rem 0;
+  margin: 0.2rem 0 0.5rem 0;
   color: var(--secondary-second-clr);
 }
 
-[aria-invalid="true"], [aria-invalid="true"]:focus-visible {
+[aria-invalid="true"],
+[aria-invalid="true"]:focus-visible {
   outline: 2px solid var(--secondary-second-clr);
 }
 
@@ -123,6 +123,7 @@ input:focus {
 }
 
 .email-input-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -146,7 +147,7 @@ input:focus {
 }
 
 .illustration {
-  margin-block: 6rem;
+  margin-block: 5rem;
 }
 
 footer {
@@ -204,28 +205,31 @@ footer {
 .flex-group {
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 
 /* Desktop */
-@media (min-width: 50em) {
+@media (min-width: 40em) {
   .heading {
     font-size: var(--fs-heading-dekstop);
   }
 
-  input {
-    border-radius: 100vw;
-    width: 80%;
-    padding: 1rem 2rem;
+  .desc {
+    font-size: var(--fs-paragraph);
+  }
+
+  .error-msg {
+    text-align: left;
+    padding-left: 0.5rem;
   }
 
   .button {
     display: inline;
-    width: 20%;
-    padding: 1rem 2rem;
+    max-width: 220px;
   }
 
   .flex-group {
-    display: flex;
     flex-direction: row;
+    gap: 1.2rem;
   }
 }
