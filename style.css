@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "LibreFranklin";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(./fonts/LibreFranklin-VariableFont_wght.ttf) format("truetype"),
+    url(./fonts/LibreFranklin-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
 :root {
   /* Colors */
 
@@ -13,7 +21,7 @@
   --neutral-first-clr: 0, 0%, 59%;
 
   /* Font family */
-  --ff-primary: "Libre Franklin", sans-serif;
+  --ff-primary: "LibreFranklin", sans-serif;
 
   /* Font sizes */
   --fs-regular-400: 0.75rem;
