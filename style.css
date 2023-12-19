@@ -115,7 +115,7 @@ input {
 }
 
 input::placeholder {
-  color: var(--secondary-first-clr);
+  color: hsl(var(--secondary-first-clr-hsl), 0.8);
 }
 
 input:focus {
